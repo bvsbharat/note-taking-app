@@ -6,7 +6,7 @@ interface EmptyStateProps {
 }
 
 const EmptyState: React.FC<EmptyStateProps> = ({
-  message = 'Create your first note by typing in the form above',
+  message = "Create your first note by typing in the form above",
 }) => {
   return (
     <div className="flex flex-col items-center justify-center p-8 text-center">
