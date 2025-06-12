@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NoteTaker - Modern Note Taking App
+
+A modern note-taking application built with Next.js and Tailwind CSS that supports all CRUD operations (Create, Read, Update, Delete) and uses localStorage for data persistence.
+
+## Features
+
+- **Create Notes**: Add new notes with title and content
+- **Read Notes**: View all your saved notes
+- **Update Notes**: Edit existing notes
+- **Delete Notes**: Remove notes you no longer need
+- **Search**: Filter notes by title or content
+- **Dark Mode**: Toggle between light and dark themes
+- **Responsive Design**: Works on desktop and mobile devices
+- **Local Storage**: All notes are saved in your browser's localStorage
+
+## Technologies Used
+
+- **Next.js**: React framework for building the UI
+- **TypeScript**: For type safety
+- **Tailwind CSS**: For styling
+- **localStorage API**: For data persistence
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Creating a Note**: Click on the note title input at the top of the page, enter a title and content, then click "Add Note"
+- **Editing a Note**: Click the edit icon on any note to modify its content
+- **Deleting a Note**: Click the delete icon to remove a note
+- **Searching Notes**: Type in the search bar to filter notes
+- **Toggling Dark Mode**: Click the sun/moon icon in the header
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
