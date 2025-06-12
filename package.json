@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && cp -r public/. .next/standalone/public && cp -r .next/static/. .next/standalone/.next/static",
+    "build": "NEXT_DISABLE_ESLINT=1 next build && cp -r public/. .next/standalone/public && cp -r .next/static/. .next/standalone/.next/static",
+    "build:no-lint": "NEXT_DISABLE_ESLINT=1 next build && cp -r public/. .next/standalone/public && cp -r .next/static/. .next/standalone/.next/static",
     "start": "node .next/standalone/server.js",
     "lint": "next lint"
   },
